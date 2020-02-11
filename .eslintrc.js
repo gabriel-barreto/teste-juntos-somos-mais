@@ -17,14 +17,26 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'prettier', '@typescript-eslint/eslint-plugin'],
+  settings: {
+    'import/extensions': ['.js', '.ts', '.tsx'],
+    'import/resolver': {
+      node: { extensions: ['.js', '.ts', '.tsx'] },
+      webpack: { config: { extensions: ['.js', '.ts', '.tsx'] } },
+    },
+  },
   rules: {
     'no-underscore-dangle': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      { js: 'never', ts: 'never', tsx: 'never' },
+    ],
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': [
       'warn',
       { devDependencies: ['**/*.test.js', '**/*.spec.js', '**/*.stories.js'] },
     ],
     'prettier/prettier': 'error',
-    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.tsx', '.ts'] }],
   },
 };
