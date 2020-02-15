@@ -26,6 +26,7 @@ module.exports = {
   },
   rules: {
     'no-underscore-dangle': 'off',
+    'implicit-arrow-linebreak': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
