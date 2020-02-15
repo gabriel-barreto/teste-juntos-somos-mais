@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import colors from './colors.styles';
+import paddings from './paddings.styles';
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
@@ -163,4 +164,5 @@ export default createGlobalStyle`
   }
 
   ${colors};
+  ${paddings};
 `;
