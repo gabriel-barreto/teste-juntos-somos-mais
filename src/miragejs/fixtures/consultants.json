@@ -1,5 +1,4 @@
-{
-	"results": [
+[
 		{
 			"gender": "female",
 			"name": {
@@ -7600,5 +7599,4 @@
 				"thumbnail": "https://randomuser.me/api/portraits/thumb/women/16.jpg"
 			}
 		}
-	]
-}
+  ]
